@@ -39,7 +39,7 @@ main{
 }
 
 nav {
-  background: #B3BCD9;
+  background: #4f77a2;
   /* position: fixed; Ensure that this is fixed without the background hero image moving around*/ 
   width: 100vw;
 }
@@ -60,18 +60,21 @@ nav ul li a{
   font-size: 14pt;
   text-transform: capitalize;
   font-family: 'Arial', 'Arial Narrow';
+  color: white
 }
 
 nav ul li:hover {
-  background-color: black;
-  transition: 0.3s
+  background-color: #132f4d;
+  transition: 0.3s;
+  color:white;
 }
 
 .active{
-background-color: black; /*make fill the full width, similar to how it looks when hovered*/
+background-color: #132f4d; /*make fill the full width, similar to how it looks when hovered*/
 text-decoration: underline;
 text-decoration-color: white;
 text-underline-offset: 10px;
+color: white;
 }
 
 a:visited{
@@ -84,7 +87,7 @@ h1{
     font-weight: bold;
     text-align: left;
     font-size: 100pt;
-    padding-top: 50px;
+    /* padding-top: 50px; */
     padding-left: 10px;
     text-transform: uppercase;
     line-height: 0.9
@@ -196,7 +199,7 @@ footer{
 
 @media only screen and (max-width: 767px) {
   nav ul{
-    height: 220px;
+    height: 207px;
     flex-direction: column;
     text-align: center;
   }
@@ -212,6 +215,12 @@ footer{
 
   .card:hover {
     transform: none;
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
   }
 
   .lit-person {
